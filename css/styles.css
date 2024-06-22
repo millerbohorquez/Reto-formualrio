@@ -1,0 +1,111 @@
+
+body {
+    font-family:  'Karla', sans-serif;
+    background-color:hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+:global(body){                                            /* estos son estilos globales*/
+	background-color: #f2eee2;
+	color: #0084f6;
+}
+
+
+
+.form-container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+.form-container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.name-fields{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    
+    
+}
+@media (width < 470px){
+    .name-fields{
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        gap: 0.5rem;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 1.2rem);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.radio-group label {
+    flex: 1;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.radio-group label:last-child {
+    margin-right: 0;
+}
+.radio-group input {
+    margin-right: 0.5rem;
+}
+@media (width < 470px){
+    .radio-group {
+        display: block;
+    }
+    .radio-group label{
+        margin-bottom: 1rem;
+    }
+}
+
+input[type="checkbox"] {
+    margin-top: 1rem;
+}
+.checkbox-group {
+    margin-bottom: 1rem;
+}
+button {
+    background-color:hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+label span {
+    color: #00695c; /* Cambia el color del asterisco a verde */
+}
+label{
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+}
+
+.error-message {
+    color: red;
+  }
