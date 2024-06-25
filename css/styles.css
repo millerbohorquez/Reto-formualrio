@@ -73,9 +73,6 @@ textarea:hover{
     background-color: hsl(148, 38%, 91%);
     cursor: pointer;
 }
-.radio-group input[type="radio"]:checked {
-    background-image: url(/assets/images/icon-radio-selected.svg);
-}
 
 .radio-group .l1 {
     flex: 1;
