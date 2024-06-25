@@ -51,8 +51,10 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            // Aquí puedes enviar el formulario o realizar otra acción
-            alert('Formulario enviado correctamente');
+            // Mostrar el mensaje de confirmación
+            $("#confirmationMessage").slideDown().delay(3000).slideUp();
+            // Opcional: Puedes borrar el contenido del formulario después de enviarlo
+            // $(form)[0].reset();
         }
     });
 });
